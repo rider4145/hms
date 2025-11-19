@@ -49,7 +49,6 @@ public class OTP extends components{
 	                .header("Content-Type", "application/json")
 	                .body(requestBody)
 	                .post(url);
-
 	       response.asString();												// get API response
 	       String mobile = response.jsonPath().getString("mobileNo");		// Try extracting mobile number
 	       String otp = response.jsonPath().getString("otp");				// Try extracting OTP if it exists in response
