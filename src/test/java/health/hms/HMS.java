@@ -2,6 +2,7 @@ package health.hms;
 
 import org.testng.annotations.Test;
 
+import health.hms.tests.Appts;
 import health.hms.tests.OTP;
 
 public class HMS extends Base{
@@ -11,7 +12,8 @@ public class HMS extends Base{
 	{
 				
 		OTP a = l.login("doc@gmail.com", "Gyrit@123");
-		a.OTPpage();
+		Appts ap = a.OTPpage();
+		ap.Appt1();
 		
 	}
 

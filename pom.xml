@@ -56,5 +56,13 @@
 	    <artifactId>rest-assured</artifactId>
 	    <version>5.4.0</version>
 	</dependency>
+
+	<!-- Used to extract the data fromm json response-->	
+	<!-- https://mvnrepository.com/artifact/org.json/json -->
+	<dependency>
+	    <groupId>org.json</groupId>
+	    <artifactId>json</artifactId>
+	    <version>20250517</version>
+	</dependency>
   </dependencies>
 </project>
