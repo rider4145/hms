@@ -23,20 +23,34 @@ public class Appts extends components {
 	}
 	
 	String today = LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+	String dates = LocalDate.now().format(DateTimeFormatter.ofPattern("d"));
 	
 	@FindBy(xpath = "//a[@href='/OPD/patientlist']") WebElement patientlist;
-	WebElement calendar = driver.findElement(By.xpath("//button[normalize-space()='" + today + "']"));
 	@FindBy(id = "«r75»-form-item") WebElement search;
 	@FindBy(css = "button[value='on']") WebElement checkbox;
 	@FindBy(css = "button[class='inline-flex items-center justify-center']") WebElement create_appt;
 		
+	public WebElement getCalendar(boolean fulldate)
+	{
+        // This is executed only when the method is called, and 'driver' is non-null
+		if(fulldate)
+		{
+			return driver.findElement(By.xpath("//button[normalize-space()='" + today + "']"));
+		}
+		else
+		{
+			return driver.findElement(By.xpath("//button[text()='" + dates + "' and @aria-selected='true']"));
+		}
+    }
+	
 	@Test
 	public void Appt1() 
 	{
 		scrollmenu("OPD");
 		patientlist.click();
 		System.out.println(today);
-		calendar.click();
+		getCalendar(true).click();
+		getCalendar(false).click();
 		search.sendKeys("MRN000413");
 		checkbox.click();
 		create_appt.click();
