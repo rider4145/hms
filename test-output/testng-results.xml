@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-01T13:57:12 IST" name="Default suite" finished-at="2025-12-01T13:57:28 IST" duration-ms="16331">
+  <suite started-at="2025-12-02T16:47:30 IST" name="Default suite" finished-at="2025-12-02T16:47:46 IST" duration-ms="15548">
     <groups>
     </groups>
-    <test started-at="2025-12-01T13:57:12 IST" name="Default test" finished-at="2025-12-01T13:57:28 IST" duration-ms="16331">
+    <test started-at="2025-12-02T16:47:30 IST" name="Default test" finished-at="2025-12-02T16:47:46 IST" duration-ms="15548">
       <class name="health.hms.HMS">
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:health.hms.HMS@10683d9d]" started-at="2025-12-01T13:57:12 IST" name="launchapp" finished-at="2025-12-01T13:57:18 IST" duration-ms="6000" status="PASS">
+        <test-method is-config="true" signature="launchapp()[pri:0, instance:health.hms.HMS@10683d9d]" started-at="2025-12-02T16:47:30 IST" name="launchapp" finished-at="2025-12-02T16:47:36 IST" duration-ms="5603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchapp -->
-        <test-method signature="Initial()[pri:0, instance:health.hms.HMS@10683d9d]" started-at="2025-12-01T13:57:18 IST" name="Initial" finished-at="2025-12-01T13:57:28 IST" duration-ms="10275" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="Initial()[pri:0, instance:health.hms.HMS@10683d9d]" started-at="2025-12-02T16:47:36 IST" name="Initial" finished-at="2025-12-02T16:47:46 IST" duration-ms="9827" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#«r75»\-form\-item"}
+              <![CDATA[element not interactable
   (Session info: chrome=142.0.7444.176)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [407ecaf5f3605d3ba0a03cd0f622d9ac, findElement {value=«r75»-form-item, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\Trsit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64128}, goog:processID: 41476, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64128/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 407ecaf5f3605d3ba0a03cd0f622d9ac]]>
+Command: [368c0941b02c0df8ac1929d2416a0a00, clickElement {id=f.5C44C4F36F23BCB4A74CC5954CF2403F.d.25704101E74842EFC77140E76CF7C16E.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\Trsit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55642}, goog:processID: 23408, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55642/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (368c0941b02c0df8ac1929d2416a0a00)] -> xpath: //*[text()= 'Cardiology']]
+Session ID: 368c0941b02c0df8ac1929d2416a0a00]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#«r75»\-form\-item"}
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=142.0.7444.176)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [407ecaf5f3605d3ba0a03cd0f622d9ac, findElement {value=«r75»-form-item, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\Trsit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64128}, goog:processID: 41476, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64128/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 407ecaf5f3605d3ba0a03cd0f622d9ac
+Command: [368c0941b02c0df8ac1929d2416a0a00, clickElement {id=f.5C44C4F36F23BCB4A74CC5954CF2403F.d.25704101E74842EFC77140E76CF7C16E.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\Trsit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55642}, goog:processID: 23408, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55642/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (368c0941b02c0df8ac1929d2416a0a00)] -> xpath: //*[text()= 'Cardiology']]
+Session ID: 368c0941b02c0df8ac1929d2416a0a00
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -44,14 +44,13 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy11.sendKeys(Unknown Source)
-at health.hms.tests.Appts.Appt1(Appts.java:54)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+at health.hms.tests.Appts.RC(Appts.java:71)
 at health.hms.HMS.Initial(HMS.java:16)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -81,7 +80,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initial -->

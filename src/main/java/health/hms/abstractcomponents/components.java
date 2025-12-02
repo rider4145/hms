@@ -26,7 +26,7 @@ public class components {
 	
 	@FindBy(css = "ul.flex.flex-nowrap.w-full") WebElement menu;
 	@FindBy(css = "a.block.w-full, ul.flex.flex-nowrap.w-full li.menu-item > button > span") List<WebElement> menuItems;
-//	@FindBy(css = "ul.flex.flex-nowrap.w-full li.menu-item > button > span") List<WebElement> menuItems;
+//	@FindBy(css = "ul.flex.flex-nowrap.w-full li.menu-item > button > span") List<WebElement> menuItems; - only 20 menus
 	
 	public String front()
 	{
@@ -60,9 +60,7 @@ public class components {
 			// Find the target menu item
 			WebElement targetItem = menuItems.stream().filter(el -> el.getText().trim().equalsIgnoreCase(item.trim())).findFirst()
 					.orElseThrow(() -> new RuntimeException("Menu item not found: " + item));
-			
-			System.out.println("Found menu item: " + targetItem.getText());
-			
+						
 			// Scroll horizontally in the container to make the item visible
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript(

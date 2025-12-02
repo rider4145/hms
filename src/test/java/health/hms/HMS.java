@@ -13,7 +13,7 @@ public class HMS extends Base{
 				
 		OTP a = l.login("doc@gmail.com", "Gyrit@123");
 		Appts ap = a.OTPpage();
-		ap.Appt1();
+		ap.RC();
 		
 	}
 
